@@ -1,7 +1,9 @@
 require 'shortcake'
 
-use 'cake-version'
+use 'cake-bundle'
+use 'cake-outdated'
 use 'cake-publish'
+use 'cake-version'
 
 option '-b', '--browser [browser]', 'browser to use for tests'
 option '-g', '--grep [filter]',     'test filter'
@@ -12,7 +14,8 @@ task 'clean', 'clean project', ->
   exec 'rm -rf lib'
 
 task 'build', 'build project', ->
-  exec 'node_modules/.bin/coffee -bcm -o lib/ src/'
+  bundle.write
+    entry: 'src/index.coffee'
 
 task 'test', 'Run tests', (opts, cb) ->
   grep    = opts.grep             ? ''

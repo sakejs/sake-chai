@@ -2,10 +2,13 @@
   "name": "cake-chai",
   "version": "0.1.1",
   "description": "Use chai assertians in mocha tasks.",
-  "main": "lib/",
-  "directories": {
-    "test": "test"
-  },
+  "main": "dist/lib.js",
+  "module": "dist/lib.mjs",
+  "jsnext:main": "dist/lib.mjs",
+  "files": [
+    "src/",
+    "dist/"
+  ],
   "dependencies": {
     "postmortem": "^0.2.4",
     "shortcake": "^1.1.9"
@@ -25,7 +28,7 @@
   },
   "scripts": {
     "test": "cake test",
-    "prepublish": "cake build"
+    "prepublishOnly": "cake build"
   },
   "repository": {
     "type": "git",
