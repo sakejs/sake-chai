@@ -2,6 +2,7 @@ use 'sake-bundle'
 use 'sake-outdated'
 use 'sake-publish'
 use 'sake-version'
+use 'sake-mocha'
 
 option '-b', '--browser [browser]', 'browser to use for tests'
 option '-g', '--grep [filter]',     'test filter'
@@ -12,7 +13,10 @@ task 'clean', 'clean project', ->
   exec 'rm -rf lib'
 
 task 'build', 'build project', ->
-  bundle.write
-    entry: 'src/index.coffee'
-    compilers:
-      coffee: version: 1
+  Promise.all [
+    exec 'coffee -bc -o . src/register.coffee'
+    bundle.write
+      entry: 'src/index.coffee'
+      compilers:
+        coffee: version: 1
+  ]
