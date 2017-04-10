@@ -1,5 +1,7 @@
 exec = require 'executive'
 
-describe 'cake-chai', ->
-  it 'should add tasks', ->
-    {stdout} = yield exec 'cake', cwd: __dirname
+require '../register'
+
+describe 'sake-chai', ->
+  it 'should complain if mocha is missing', ->
+    {stdout, stderr} = yield exec 'sake', cwd: __dirname
