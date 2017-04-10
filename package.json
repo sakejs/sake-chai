@@ -10,8 +10,8 @@
     "lib/"
   ],
   "dependencies": {
-    "chai": "3.4.1",
-    "chai-as-promised": "5.1.0"
+    "chai": "3.5.0",
+    "chai-as-promised": "6.0.0"
   },
   "devDependencies": {
     "sake-bundle": "0.4.2",
