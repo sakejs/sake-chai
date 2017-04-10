@@ -5,6 +5,7 @@
   "main": "lib/sake-chai.js",
   "module": "lib/sake-chai.mjs",
   "files": [
+    "register.js",
     "src/",
     "lib/"
   ],
