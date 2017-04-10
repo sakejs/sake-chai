@@ -1,3 +1,5 @@
 export default (opts = {}) ->
-  # task 'test', (opts) ->
-  #   opts.useChai = true
+  try
+    require.resolve 'sake-mocha'
+  catch err
+    console.warn 'sake-chai requires sake-mocha: `npm install sake-mocha --save-dev`'
