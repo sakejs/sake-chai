@@ -41,7 +41,7 @@
     "tasks"
   ],
   "author": "Hanzo, Inc. <hi@hanzo.io",
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/sakejs/sake-chai/issues"
   },
