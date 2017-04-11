@@ -1,5 +1,4 @@
 # sake-chai
-Add chai assertions with promise support to `sake-chai` tasks.
 
 [![npm][npm-img]][npm-url]
 [![build][build-img]][build-url]
@@ -7,6 +6,8 @@ Add chai assertions with promise support to `sake-chai` tasks.
 [![downloads][downloads-img]][downloads-url]
 [![license][license-img]][license-url]
 [![chat][chat-img]][chat-url]
+
+Add chai assertions with promise support to `sake-chai` tasks.
 
 ## Install
 ```bash
