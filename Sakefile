@@ -10,8 +10,5 @@ task 'clean', 'clean project', ->
 task 'build', 'build project', ->
   Promise.all [
     exec 'coffee -bc -o . src/register.coffee'
-    bundle.write
-      entry: 'src/index.coffee'
-      compilers:
-        coffee: version: 1
+    bundle.write entry: 'src/index.coffee'
   ]
