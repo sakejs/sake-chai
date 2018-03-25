@@ -1,6 +1,6 @@
 {
   "name": "sake-chai",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Use chai assertians with sake-mocha",
   "main": "lib/sake-chai.js",
   "module": "lib/sake-chai.mjs",
